@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Test</title>
+	<meta charset="utf-8"/>
+</head>
+<body>
+<script>  
+
+var questions = [
+     {
+           prompt: "What's the git command that downloads your repository from GitHub to your computer?\n(a) git push\n\ (b) git clone\n(c) git fork",
+           answer: "b"
+     },
+     {
+          prompt: "How do you create a copy of a lab under your own GitHub account so that you can solve the lab?\n(a) git clone\n\ (b) forking via GitHub site\n(c) git pull-request",
+          answer: "b"
+     },
+     {
+          prompt: "What's the opposite of git clone, instead of downloading your code from GitHub, uploads your changes and code back to GitHub?\n(a) git push\n\ (b) git upload\n(c) git add",
+          answer: "a"
+     },
+     {
+          prompt: "How do you check the state of your local git repository since your last commit?\n(a) git commit\n\ (b) git check\n(c) git status",
+          answer: "c"
+     },
+    {
+          prompt: "Which of the following commands will create a new branch called brand_new and also check it out?\n(a) git checkout -b brand_new\n\ (b) git branch brand_new\n(c) git checkout brand_new",
+          answer: "a"
+     },
+    {
+          prompt: "What's a shortcut to staging all the changes you have?\n(a) git add .\n\ (b) git commit \n(c) git commit add",
+          answer: "a"
+     },          
+     {
+          prompt: "Which of the following is the correct way to initialize a new Git repository?\n(a) git add .\n\ (b) git init\n(c) git commit",
+          answer: "b"
+     },     
+     {
+          prompt: "What is the name of the file used to tell Git to ignore certain files?\n(a) gitignore\n\ (b) .gitignore\n(c) ignore.git",
+          answer: "b"
+     }     
+];
+var score = 0;
+
+for(var i = 0; i < questions.length; i++){
+     var response = window.prompt(questions[i].prompt);
+     if(response == questions[i].answer){
+          score++;
+          alert("Correct!");
+     } else {
+          alert("Wrong!");
+     }
+}
+alert("you got " + score + "/" + questions.length);
+
+
+</script>
+
+</body>
+</html>
